@@ -1,0 +1,5 @@
+mkdir "C:\Users\%USERNAME%\AppData\Local\Google\"
+mkdir "C:\Users\%USERNAME%\AppData\Local\Google\Chrome\"
+mkdir "C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\"
+mkdir "C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\"
+copy V:\chromesave\Data\* "C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\"

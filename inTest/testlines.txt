@@ -1,0 +1,15 @@
+v: 
+ 
+::if (%DATE:~0,3% == Tue || %DATE:~0,3% == Thu)  pause & notepad.exe
+ 	:: if (%time:~0,2% GEQ 2 && %time:~0,2% LSS 4) (start notepad.exe)
+if %DATE:~0,3% == Tue (pause & start notepad.exe)
+
+:: pause exit -b 	:: if (%time:~0,2% GTR 1 && %time:~0,2% LSS 2) (start notepad.exe)
+:: if %DATE:~0,3% == Tue (pause & start notepad.exe)
+
+:: pause exit -bEQ 3   & if %time:|| if %DATE:~0,3% == Thu ~0,2% GEQ 2
+
+http://www.vectorsite.net/tsbatch.html
+http://www.makeuseof.com/tag/write-simple-batch-bat-file/
+http://stackoverflow.com/questions/8438511/if-or-if-in-a-windows-batch-file
+http://www.techsupportforum.com/forums/f128/solved-windows-7-batch-getting-day-of-week-moved-from-vista-7-a-565632.html

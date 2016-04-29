@@ -1,0 +1,3 @@
+v:
+cd \classque
+copy 3443-1\run*.lnk "%USERPROFILE%\Desktop"

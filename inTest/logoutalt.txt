@@ -1,0 +1,11 @@
+
+
+::  copy "C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\*" v:\chrome\data\
+:: copy "C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Preferences" v:\chrome\data\
+:: pause
+::  copy "C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cookies" v:\chrome\data\
+:: copy "C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Current Session" v:\chrome\data\
+:: pause
+:: copy "C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Current Tabs" v:\chrome\data\
+:: copy "C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Web Data" v:\chrome\data\
+:: copy "C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Shortcuts" v:\chrome\data\

@@ -1,0 +1,10 @@
+http://stackoverflow.com/questions/1192476/format-date-and-time-in-a-windows-batch-script
+http://steve-jansen.github.io/guides/windows-batch-scripting/part-2-variables.html
+http://steve-jansen.github.io/guides/windows-batch-scripting/part-2-variables.html
+http://stackoverflow.com/questions/301108/adding-to-time-variable-in-windows-cmd-script
+http://ss64.com/nt/if.html
+http://stackoverflow.com/questions/11743471/set-batch-file-variable-if-a-the-time-is-in-a-specified-period
+http://www.cs.utsa.edu/~muzahid/course/spring16/cs3843/
+http://www.cs.utsa.edu/~muzahid/course/spring16/cs3843/assign/assign1.html
+https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=batch%20script%20group%20variables
+chrome://newtab/

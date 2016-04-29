@@ -1,0 +1,131 @@
+#SSH Secure Shell global settings file
+#SSH Communications Security Ltd
+File Version=S:3.20
+
+[Appearance]
+Show Toolbar=N:1
+Show Statusbar=N:1
+Caption Displays File Name=N:1
+Caption Displays Host Name=N:1
+Scrollback Buffer Size=N:500
+Show Add Profile Dialog=N:1
+Hide Add Profile Dialog after 5 sec=N:0
+Office XP Look=N:0
+Paste on Right Mouse Click=N:0
+Open all windows=N:1
+Scroll end on output=N:1
+
+[Font]
+Name=S:Terminal
+Size=N:9
+
+[Messages]
+Yes=S:Save changes on exit?
+Banner=N:1
+
+[Firewall]
+Host Name=S:
+Port=N:1080
+Socks Version=N:4
+
+[Connection]
+Connection Timeout=N:0
+
+[External Keys]
+Disconnect Automatically When Token Is Removed=N:1
+Connect Automatically When Token Is Reinserted=N:1
+Seconds To Wait Before Disconnecting=N:0
+
+[PKI]
+LDAP Servers=S:
+Disable CRLs=N:0
+Import Directory=S:\
+
+[File Transfer]
+Show files starting with period=N:0
+Show Root Folder=N:0
+List Display Mode=N:3
+Confirm Overwrite=N:1
+Close Progress Dialog on success=N:1
+Upload-Download Directory=S:\
+Preserve file time=N:1
+Application to Execute=S:notepad.exe
+Time Formatting=S:%c
+Transfer Mode=N:2
+Ascii Extensions=S:txt,html,htm,bat,
+Default File Permission Mask=S:644
+Default Directory Permission Mask=S:755
+Preserve Original File Permissions=N:1
+Number of Buffers=N:10
+Buffer Size=N:32
+Automatically Upload Locally Edited Remote Files=N:2
+Maximum Number of Simultaneous Transfers=N:2
+Default Folder=S:
+Favorite Folders=S:C:\
+Favorite Folders=S:V:\
+Layout=N:1
+Notify about errors=N:1
+Filebar button mode=N:0
+
+[Security]
+Clear ClipBoard=N:1
+Clear Scroll Buffer=N:0
+Warn about SSH1=N:1
+Disable password length masking in SSH1 Connections=N:0
+
+[Colors]
+Foreground=N:0
+Background=N:15
+Disconnected=N:8
+Selection=N:14
+Cursor=N:12
+Reverse Video=N:0
+Ansi Colors=N:1
+
+[Help]
+Type=N:-1
+
+[Color Values]
+0 Black=H:00000000
+9 Red=H:000000FF
+10 Lime=H:0000FF00
+11 Yellow=H:0000FFFF
+12 Blue=H:00FF0000
+13 Fuschia=H:00FF00FF
+14 Aqua=H:00FFFF00
+15 White=H:00FFFFFF
+7 Silver=H:00CCCCCC
+1 Maroon=H:0000007F
+2 Green=H:00007F00
+3 Olive=H:00007F7F
+4 Navy=H:007F0000
+5 Purple=H:007F007F
+6 Teal=H:007F7F00
+8 Gray=H:007F7F7F
+
+[Print Font]
+Name=S:Courier New
+Size=N:9
+
+[Print Margin]
+Top=N:10
+Bottom=N:10
+Left=N:10
+Rigth=N:10
+
+[Page Header]
+Title=N:1
+Date=N:1
+
+[Page Footer]
+Page Num=N:1
+
+[Log File]
+Default Directory=S:
+
+[Debugging]
+Enabled=N:0
+Level=S:
+File=S:
+File Size Limit=N:0
+Clear File on Startup=N:1
