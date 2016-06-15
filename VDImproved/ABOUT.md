@@ -1,14 +1,15 @@
 About
 =
 
-
-[[TL;DR skip to the instructions|internal -instr]]
+[TL;DR skip to the instructions](#instr)
 
 #####Table of Contents
-[[What's the point|internal -why]]
 
+- [Why](#why)
+- [Instructions](#instr)
 
-#####Why? -why
+<div id='why'/>
+#####Why?
 
 In school, UTSA, certain classes require we use the VDI (virtual desktop infastructure) 
 which was implemented in the new CS building. 
@@ -22,6 +23,7 @@ and from no user impact to a decent cumulative waste of time and the annoyance o
 As with most other programmers, I abhor this and attemp to automate or bypass all together.
 
 
--instr #####Instructions
+<div id='instr'/>
+#####Instructions
 
-
+It is important to retain the directory structure, or feel free to edit files accordingly
