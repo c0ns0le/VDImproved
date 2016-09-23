@@ -7,6 +7,7 @@ About
 
 - [Why](#why)
 - [Instructions](#instr)
+- [ClassQue Setup](#cque)
 
 <div id='why'/>
 #####Why?
@@ -26,4 +27,13 @@ As with most other programmers, I abhor this and attemp to automate or bypass al
 <div id='instr'/>
 #####Instructions
 
-It is important to retain the directory structure, or feel free to edit files accordingly
+It is important to retain the directory structure for file dependancies.
+UTSA will only keep changes made to a network drive with a 3 letter 3 number ID, mounted as the V drive. 
+
+-Extract all files to  V:\
+-Execute the V:\VDImproved/startup.bat or restart and the automation will now run at startup
+
+<div id='cque'/>
+#####ClassQue Setup
+
+
