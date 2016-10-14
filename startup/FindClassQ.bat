@@ -1,3 +1,9 @@
+#http://stackoverflow.com/questions/1515965/how-to-input-a-string-from-user-into-environment-variable-from-batch-file
+#http://stackoverflow.com/questions/14834625/reading-text-file-in-batch-script
+#http://stackoverflow.com/questions/4788863/how-to-send-series-of-commands-to-a-command-window-process?noredirect=1&lq=1
+#http://stackoverflow.com/questions/15557801/batch-dialogue-to-choose-directory-to-run-batch?noredirect=1&lq=1
+
+
 #search for classQ folder on Z
 #on true cd into folder
 #if search all files for java file ext true
