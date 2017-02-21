@@ -1,0 +1,259 @@
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Tue 04/26-14:37		P		  		"login-chrome": "chrome sucessfully restored"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Tue 04/26-14:37		P		  		"login-DesktopIcons": "icons copied to desktop successfully"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Tue 04/26-14:38		  		F		"3843 ClassQ": "Wrong day"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Tue 04/26-14:38		  		F		"3843 ClassQ": "Attendance not recorded"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Tue 04/26-14:39		P		  		"login-Xming": "Xming started!"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Thu 04/28-14:38		P		  		"login-chrome": "chrome sucessfully restored"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Thu 04/28-14:38		P		  		"login-DesktopIcons": "icons copied to desktop successfully"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Thu 04/28-15:44		  		F		"3843 ClassQ": "Wrong day"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Thu 04/28-15:44		  		F		"3843 ClassQ": "Attendance not recorded"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Tue 02/14-17:48		  		F		"Install_VDImproved": "Install failed. startup_VDImp.bat missing"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Tue 02/14-17:52		  		F		"Install_VDImproved": "Install failed. startup_VDImp.bat missing"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Tue 02/14-17:53		  		F		"Install_VDImproved": "Install failed. startup_VDImp.bat missing"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Tue 02/14-17:58		  		F		"login chrome": "Install cancelled, Classque not found"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Tue 02/14-17:59		  		F		"V:\VDImproved\Install_VDImproved.bat": "Install cancelled, Classque not found"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Tue 02/14-18:01		P		  		"Install_VDImproved": "Install success."
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Tue 02/14-18:48		P		  		"Install_VDImproved": "Install success."
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Tue 02/14-18:49		  		F		"V:\VDImproved\Install_VDImproved.bat": "Install failed. startup_VDImp.bat missing"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Tue 02/14-18:50		P		  		"Install_VDImproved": "Install success."
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Tue 02/14-18:51		P		  		"Install_VDImproved": "Install success."
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Tue 02/14-19:00		P		  		"Install_VDImproved": "Install success."
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Tue 02/14-19:01		P		  		"Install_VDImproved": "Install success."
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Tue 02/14-19:06		P		  		"Install_VDImproved": "Install success."
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Tue 02/14-19:06		P		  		"Install_VDImproved": "Install success."
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Tue 02/14-22:30		  		F		"login chrome": "failed to restore default folder"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Tue 02/14-22:50		  		F		"login chrome": "failed to restore default folder"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Wed 02/15-20:10		P		  		"login-DesktopIcons": "icons copied to desktop successfully"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Wed 02/15-20:10		  		F		"3843 ClassQ": "Wrong day"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Wed 02/15-20:11		  		F		"3843 ClassQ": "Attendance not recorded"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Wed 02/15-20:11		  		F		"3773 ClassQ": "Wrong day"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Wed 02/15-20:11		  		F		"3773 ClassQ": "Attendance not recorded"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Wed 02/15-20:11		P		  		"login-Xming": "Xming started!"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Thu 02/16-18:39		P		  		"login-DesktopIcons": "icons copied to desktop successfully"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Thu 02/16-18:39		  		F		"3843 ClassQ": "Wrong day"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Thu 02/16-18:39		  		F		"3843 ClassQ": "Attendance not recorded"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Thu 02/16-18:39		  		F		"3773 ClassQ": "Wrong day"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Thu 02/16-18:39		  		F		"3773 ClassQ": "Attendance not recorded"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Thu 02/16-18:46		  		F		""V:\VDImproved\install\find_classque.bat"": "No clasque files found"
+  
+END------------------------------------------------   
+  

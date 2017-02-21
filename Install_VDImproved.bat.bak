@@ -1,0 +1,4 @@
+@ECHO off
+::check for dir v:/startup and startup.bat was created by classque
+::check that startup_VDImp exists
+::append to startup.bat to include VDImproved/startup_VDImp.bat
