@@ -149,16 +149,19 @@ ECHO in LOG && pause
 CALL v:\VDImproved\writeEvent.bat "login-chrome" "chrome sucessfully restored" "P"
 GOTO:_SETDEFAULT
 
+
+::restore chromes previous tabs if it wass running and sets it as default
+:_RESTORETABS
+ECHO in Restoretabs && pause
+START "" "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" "--restore-last-session"
+::fall thru
+
 ::Sets chrome as default browser, launches browser
 :_SETDEFAULT
  ECHO in setdefault && pause
 START "" "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" "-silent -nosplash -setDefaultBrowser"
 GOTO:_EOF
 
-::restore chromes previous tabs if it wass running and sets it as default
-:_RESTORETABS
-ECHO in Restoretabs && pause
-START "" "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" "--restore-last-session"
 
 
 :_EOF

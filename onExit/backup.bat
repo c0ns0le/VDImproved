@@ -31,8 +31,8 @@ pause
 IF not exist "C:\Users\%USERNAME%\AppData\Local\Microsoft\Office\15.0\" GOTO:_CPCHROME
 IF not exist "v:\VDImproved\backup_restore\Microsoft\Office\15.0\" mkdir "v:\VDImproved\backup_restore\\Microsoft\Office\15.0\"
 ROBOCOPY "C:\Users\%USERNAME%\AppData\Local\Microsoft\Office\15.0" "v:\VDImproved\backup_restore\Microsoft\Office\15.0" *.* /E
-::TODO chenge back to GTR 7
-IF %ERRORLEVEL% LSS 8 (
+::for error check chsnge to GTR 7
+IF %ERRORLEVEL% GRT 7 (
 ECHO copy MS failed
 pause
 set "_err=Microsoft"
@@ -65,8 +65,8 @@ pause
 IF not exist "C:\Users\%USERNAME%\AppData\Local\Google\Chrome\" GOTO:_EOF
 IF not exist "v:\VDImproved\backup_restore\chrome\" mkdir "v:\VDImproved\backup_restore\chrome\"
 ROBOCOPY "C:\Users\%USERNAME%\AppData\Local\Google\Chrome" "v:\VDImproved\backup_restore\chrome" *.* /E
-::TODO chenge back to GTR 7
-IF %ERRORLEVEL% LSS 8 (
+::for error check chsnge to GTR 7
+IF %ERRORLEVEL% GTR 7 (
 ECHO copy Chrome failed
 pause
 set "_err=_err + chrome"

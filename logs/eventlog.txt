@@ -257,3 +257,115 @@ Thu 02/16-18:46		  		F		""V:\VDImproved\install\find_classque.bat"": "No clasque
   
 END------------------------------------------------   
   
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Mon 02/20-21:11		P		  		"login-DesktopIcons": "icons copied to desktop successfully"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Mon 02/20-21:11		  		F		"3843 ClassQ": "Wrong day"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Mon 02/20-21:11		  		F		"3843 ClassQ": "Attendance not recorded"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Mon 02/20-21:11		  		F		"3773 ClassQ": "Wrong day"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Mon 02/20-21:11		  		F		"3773 ClassQ": "Attendance not recorded"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Tue 02/21-11:48		P		  		"login-DesktopIcons": "icons copied to desktop successfully"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Tue 02/21-11:48		  		F		"3843 ClassQ": "Wrong day"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Tue 02/21-11:48		  		F		"3843 ClassQ": "Attendance not recorded"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Tue 02/21-11:48		  		F		"3773 ClassQ": "Wrong day"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Tue 02/21-11:48		  		F		"3773 ClassQ": "Attendance not recorded"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Tue 02/21-23:39		P		  		"login-DesktopIcons": "icons copied to desktop successfully"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Tue 02/21-21:46		P		  		"login-DesktopIcons": "icons copied to desktop successfully"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Sat 02/25-10:26		  		F		"3843 ClassQ": "Wrong day"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Sat 02/25-10:26		  		F		"3843 ClassQ": "Attendance not recorded"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Sat 02/25-10:26		  		F		"3843 ClassQ": "Wrong day"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Sat 02/25-10:26		  		F		"3843 ClassQ": "Attendance not recorded"
+  
+END------------------------------------------------   
+  

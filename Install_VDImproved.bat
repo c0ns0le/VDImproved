@@ -36,6 +36,9 @@ GOTO:_REQFILE
 
 :_CONTINUE
 ECHO in _CONTINUE && pause
+CALL v:\VDImproved\install\install_classque.bat
+IF %ERRORLEVEL% EQ 2 (GOTO:_NOTFOUND)
+
 IF not exist "v:\startup" (
 ECHO Classque not installed properly, install will exit
 PAUSE
@@ -58,9 +61,12 @@ GOTO:_FAIL1
 
 :_FAIL1
 ECHO in _FAIL1 && pause
-
 CALL v:\VDImproved\writeEvent.bat %0 "Install cancelled, Classque not found" "F"
 GOTO:EOF
+
+:_NOTFOUND
+CALL v:\VDImproved\writeEvent.bat "%0" "No clasque files found" "F"
+EXIT /B
 
 :_QUIT
 ECHO in _QUIT && pause
