@@ -369,3 +369,122 @@ Sat 02/25-10:26		  		F		"3843 ClassQ": "Attendance not recorded"
   
 END------------------------------------------------   
   
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Sat 02/25-18:07		  		F		"3843 ClassQ": "Wrong day"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Sat 02/25-18:07		  		F		"3843 ClassQ": "Attendance not recorded"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Sat 02/25-18:07		  		F		"3843 ClassQ": "Wrong day"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Sat 02/25-18:07		  		F		"3843 ClassQ": "Attendance not recorded"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Tue 02/28- 9:42		  		F		"3843 ClassQ": "Wrong day"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Tue 02/28- 9:42		  		F		"3843 ClassQ": "Attendance not recorded"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Tue 02/28- 9:42		  		F		"3843 ClassQ": "Wrong day"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Tue 02/28- 9:42		  		F		"3843 ClassQ": "Attendance not recorded"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 03/03-14:04		P		  		"login-DesktopIcons": "icons copied to desktop successfully"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Wed 03/15-20:39		P		  		"login-DesktopIcons": "icons copied to desktop successfully"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Wed 03/22-11:37		P		  		:_LOG: "chrome sucessfully restored"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Thu 03/23-13:56		P		  		:_LOG: "chrome sucessfully restored"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Sat 03/25-10:19		P		  		"Login-Chrome": "chrome sucessfully restored"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Sun 03/26-11:19		P		  		"Login-Chrome": "chrome sucessfully restored"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Sun 03/26-12:38		  		F		"V:\VDImproved\start\login-git.bat": "failed to copy errcode:0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Mon 03/27-10:14		P		  		"Login-Chrome": "chrome sucessfully restored"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Wed 03/29-10:51		P		  		"Login-Chrome": "chrome sucessfully restored from backup"
+  
+END------------------------------------------------   
+  

@@ -1,36 +1,58 @@
-@ECHO OFF
-:: template for all classque's
-:: CREATE NEW script to ask for time/day
-:: First parameter, provides check for CALL from install_VDImproved
-:: 		if T -> set days and times of class. 
-
-
-
+:: template for all classque's, it is copied and renamed to match installed classque files
 :: This will run the classque based on day and time(24hr)
-:: NOTE! The VDI machines have been known to randomly change from 12hour to 24 hour. If there is a problem change the GOTO's
+:: NOTE! The VDI machines have been known to randomly change from 12hour to 24 hour. 
+:: TODO If there is a problem change the GOTO's numbers to either 12 or 24 format
 :: Need to make GOTO based on 12 and 24 hours
-
+::https://ss64.com/nt/schtasks.html
+@ECHO OFF
 v:
-IF %1 == I ( CALL _INSTALL)
-:: add new .bat to open cmd to enter days M,T,W,Th,F and start end time
-FOR %%F IN (_day) DO (
-	IF %DATE:~0,3% == %%F GOTO:_TIME
-	IF 
+SETLOCAL ENABLEDELAYEDEXPANSION
+:: in the command time:~x,y tthe x,y indicate start position and number of positions to print
+:: x is numeric value 0-9 of the position to start printing
+:: y is numeric value 0-9 for number of positions to print
+
+
+ALGO
+GET Class time
+	Read from config file: either by line, or delim. RETHINK after changes made to define_daytime_calssque.bat
+		could store times as single digit h1, h2, m1, m2 per entry then recombine 
+		OR store as _hour=hh and another _minute=mm
+		OR store as a whole hh:mm
+		OR PREFERED store h1, h2, mm for the following:
+			ADJUST24HR h1, h2 into single var to make easier to do _FORMATSHIFT if PM
+				if h1=0 -> _hour=h2
+				else _hour=h1h2
+				_hour+=12
+		
+		:: Idealy use SCHTASKS command, however, with the the disk image always being reset, 
+		:: there is no point scheduling when it would always have to create new schedule anyway
+		:: simpler to just use TIME /T command and either compare for LEQ and GEQ,
+		:: TODO still need to know if it returns a leading 0
+		AM or PM definintly own var as SCHTASKS uses 24 hour format
+			IF AM: do _hour=h1h2 MUST CHECK if SCHTASKS uses leading 0
+			OR IF PM: CALL _FORMATSHIFT
+
+CREATE SCHTASKS to run at class time 			
+			
+			
+			
+SET _sysTimeHr=%time:~0,2%
+SET _sysTimeMin=%time:~3,2%
+
+SET "_days="
+SET "_time="
+FOR %%F IN (_days) DO (
+	IF %DATE:~0,3% == %%F PAUSE&GOTO:_TIME
+)
 GOTO:_WRONGDAY
-
-:: this block should only run during install to set valid run times and days
-
-:_INSTALL
-:: %2 is M, W, F
-:: %3 is M, W
-:: %4 is Tu, Th
-:: %5 is M, T, W, Th, F
-SET "_day=%2"
-SET
 
 
 :_TIME
-IF %time:~0,2% GEQ 15 GOTO:_PASS else GOTO:_WRONGTIME
+:: checks hour then minute
+
+pause
+IF %time:~0,2% GEQ 15 
+GOTO:_PASS else GOTO:_WRONGTIME
 
 
 :_PASS

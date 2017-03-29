@@ -1,0 +1,5 @@
+# These are user specific dirs and files
+backup_restore/
+logs/
+login-CQ*.bat
+inTest/

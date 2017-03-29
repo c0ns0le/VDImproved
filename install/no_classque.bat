@@ -15,8 +15,6 @@ echo --------------------------------------------------------------------
 for %%I in (Y N) do if /I #%confirm%==#%%I goto _%%I
 IF NOT DEFINED %confirm% (GOTO:CONFIRM)
 
-::TODO check for loop if nothing entered
-
 :: exits back to Install_VDImproved with errorlevel set to 0
 :: this will continute with the install process
 :_Y

@@ -1,3 +1,5 @@
+::TESTED GOOD
+
 :: creates backup of Office and Chrome files
 ::TODO add cmd preferences, desktop shortcuts, recent, or way to check recent program activity and make dynamic backup
 
@@ -19,24 +21,20 @@ IF _chrome == C ( GOTO:_CPCHROME )
 ECHO fell through check
 pause
 
+:_GIT
 
-::else fallthru
-:: the /T and /F flags are to terminate proc with all children and forcefully terminates, respectively
-::_DIECHROME 
-::(ECHO in DIECHROME) && pause
 
 :_MS
 ECHO in MS
 pause
 IF not exist "C:\Users\%USERNAME%\AppData\Local\Microsoft\Office\15.0\" GOTO:_CPCHROME
-IF not exist "v:\VDImproved\backup_restore\Microsoft\Office\15.0\" mkdir "v:\VDImproved\backup_restore\\Microsoft\Office\15.0\"
-ROBOCOPY "C:\Users\%USERNAME%\AppData\Local\Microsoft\Office\15.0" "v:\VDImproved\backup_restore\Microsoft\Office\15.0" *.* /E
-::for error check chsnge to GTR 7
-IF %ERRORLEVEL% GRT 7 (
+ROBOCOPY "C:\Users\%USERNAME%\AppData\Local\Microsoft\Office\15.0" "v:\VDImproved\backup_restore\Microsoft\Office\15.0" *.* /S
+::for error check on fail change to LEQ 7 else normal operation GTR 7
+IF %ERRORLEVEL% GTR 7 (
 ECHO copy MS failed
 pause
 set "_err=Microsoft"
-Call _FAIL !_err!
+Call :_FAIL !_err!
 )
 ::else fallthru
 
@@ -63,14 +61,15 @@ CALL taskkill /FI "IMAGENAME eq chrome.exe" /T /F
 ECHO in exist
 pause
 IF not exist "C:\Users\%USERNAME%\AppData\Local\Google\Chrome\" GOTO:_EOF
-IF not exist "v:\VDImproved\backup_restore\chrome\" mkdir "v:\VDImproved\backup_restore\chrome\"
-ROBOCOPY "C:\Users\%USERNAME%\AppData\Local\Google\Chrome" "v:\VDImproved\backup_restore\chrome" *.* /E
-::for error check chsnge to GTR 7
+ROBOCOPY "C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default" "v:\VDImproved\backup_restore\chrome\User Data\Default" /S
+ROBOCOPY "C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data" "v:\VDImproved\backup_restore\chrome\User Data" /LEV:1
+
+::for error check on fail change to LEQ 7 else normal operation GTR 7
 IF %ERRORLEVEL% GTR 7 (
 ECHO copy Chrome failed
 pause
 set "_err=_err + chrome"
-Call _FAIL !_err!
+Call :_FAIL !_err!
 )
 
 ECHO finished cpchrome

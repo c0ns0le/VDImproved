@@ -1,4 +1,4 @@
-echo on
+@ECHO ON
 ::This file copied to v:/startup which is created by classque else created by Install_VDImproved
 pushd .
 v:

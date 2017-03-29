@@ -36,7 +36,7 @@ GOTO:_REQFILE
 
 :_CONTINUE
 ECHO in _CONTINUE && pause
-CALL v:\VDImproved\install\install_classque.bat
+CALL v:\VDImproved\install\find_classque.bat
 IF %ERRORLEVEL% EQ 2 (GOTO:_NOTFOUND)
 
 IF not exist "v:\startup" (
@@ -72,6 +72,7 @@ EXIT /B
 ECHO in _QUIT && pause
 
 CALL v:\VDImproved\writeEvent.bat %0 "Install failed. startup_VDImp.bat missing" "F"
+START "" /MAX ECHO Install failed. startup_VDImp.bat missing
 GOTO:EOF
 
 :_RUN

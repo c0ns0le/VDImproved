@@ -1,0 +1,65 @@
+Parse a file
+:_EDITFILE
+@echo off
+
+:: 302ify.bat
+:: ----------
+
+:: this BATch file should be placed in the top level directory/folder below
+::   which are the folders 000-050, whose data.txt file is to be changed
+
+setlocal
+
+:: process each folder in turn
+for /l %%a in (0, 1, 50) do call :process_folder %%a
+
+echo Finished!
+endlocal
+:: end of BATch file
+goto :eof
+::----------------
+
+:process_folder
+:: form the correct folder name with leading zeros
+set folder=00%1
+set folder=%folder:~-3,3%
+echo %~n0: processing folder %folder%
+
+:: set up the current directory
+pushd %folder%
+
+:: rename the original data.txt file to act as the source
+if not exist data.ori ren data.txt data.ori
+:: get rid of any processed data.txt from a previous run, if any
+if     exist data.txt del data.txt
+
+:: process the copied file data.ori one line at a time
+for /f "tokens=*" %%a in (data.ori) do call :process_line "%%a"
+
+:: end of folder processing
+popd
+goto :eof
+::----------------
+
+:process_line
+:: remove the double-quotes from both ends of the line  
+set line=%~1
+
+:: here we assume that ONLY lines whose first three characters are numeric are to be changed
+:: split the line into two parts
+set firstthree=%line:~0,3%
+set remainder=%line:~3%
+
+:: process line according to first three characters
+set notnum=
+for /f "delims=0123456789" %%a in ("%firstthree%") do set notnum=y
+if defined notnum (
+  rem first three characters are not numeric, just write out entire line
+  echo %line%>> data.txt
+  ) else (
+  rem  first three characters are numeric, change them to 302
+  echo 302%remainder%>> data.txt
+)
+
+:: end of line processing
+goto :eof

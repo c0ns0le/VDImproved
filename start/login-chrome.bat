@@ -1,6 +1,7 @@
+::TESTED good
+
 @ECHO off
 
-::checked = in prog sections with ::P or ::F, pass or fail
 :: Restore chrome and adds success or failure to log file
 
 :: Checks c:\....APPDATA\Local for existing file structure and creates if needed
@@ -31,7 +32,7 @@ pause
 
 
 ::checks if backup dir for chrome exists
-:_HASBACKUP
+:_BACKUPEXIST
 ECHO:in has backup
 IF not exist "V:\VDImproved\backup_restore\chrome\User Data" (
 mkdir "V:\VDImproved\backup_restore\chrome\User Data"  
@@ -46,15 +47,20 @@ pause
 set /a "_check=_run+_backup"
 echo check is %_check%
 pause
-::  run + backup, run=1 if T, else 0, backup=3 if T, else 0
-::  = 1+3 -> 4 both exist
-::         -> IsRunning, restore
-::  = 1+0 -> 1 chrome exists, backup not exists
-::         -> IsRunning, FirstRun
-::  = 0+3 -> 3 chrome not exist, backup exist
-::         -> Restore,Setdefault
-::  = 0+0 -> 0 neither exist
-::         -> setDEFAULT
+
+
+::  is running + backup, is running=1 if exist (else 0) AND backup=3 if exist (else 0)
+:: = 1+3 -> 4 (both exist)
+::      if 1 -> IsRunning (if T -> kill || else if F) -> HasBackup -> RestoreBackup -> RestoreSession->EOF
+::    OR
+:: = 1+0 -> 1 (chrome exists AND backup not exists)
+::       -> -> IsRunning (if T -> kill || else if F) -> HasBackup -> FirstRun, SetDefault
+::    OR
+:: = 0+3 -> 3 (chrome not exist AND backup exist)
+::       -> Restore
+::    OR
+:: = 0+0 -> 0 (neither exist)
+::       -> setDEFAULT
 for %%I in (0 1 3 4) do if #%_check%==#%%I goto _%%ISTATE
 
 :_4STATE
@@ -75,8 +81,7 @@ GOTO:_ISRUNNING
 :_3STATE
 echo _3STATE, run is !_run! , backup is !_backup! , check is %_check%
 pause
-GOTO:_RESTORE
-
+GOTO:_RESTOREBACKUP
 
 ::checks to see if chrome is runnning
 :_ISRUNNING
@@ -89,9 +94,11 @@ for /F "delims=*" %%p in ('!_proc! ^| findstr "chrome.exe" ') do (
   set _running=Y
   GOTO:_KILL
 )
-GOTO:_CHK
+GOTO:_HASBACKUP
 
+:: the process has already been confirmed to be running
 :_KILL
+ECHO ---in KILL
 ECHO is running is %_running% 
 pause
 IF %_running% == Y (
@@ -99,15 +106,18 @@ echo in running check if statement
 pause
 CALL taskkill /IM chrome.exe
 )
+EXIT /B 0
 
-::may need to add /F at end of above if chrome wont shutdown in time CALL taskkill /FI "IMAGENAME eq chrome.exe" /T
-:_CHK
-echo killed chrome. backup is !_backup! 
+
+:: Function is simply a conditional since  performing AND OR if statements isnt supported
+:_HASBACKUP
+echo ---in :_HASBACKUP
+ECHO backup is !_backup! 
 pause
 IF !_backup! == 3 (
 echo checking backing equals 3 is %_backup%
 pause
-GOTO:_RESTORE
+GOTO:_RESTOREBACKUP
 ) 
 IF !_backup! == 0 (
 echo checking backing equals 0 is %_backup%
@@ -117,49 +127,63 @@ GOTO:_FIRSTRUN
 )
 
 
-:_RESTORE
-::copies from VDImproved backup location to chrome default location
+:_RESTOREBACKUP
+::copies from VDImproved backup location to chrome default location in APPDATA
 echo in restore
 pause
 ROBOCOPY "V:\VDImproved\backup_restore\chrome" "C:\Users\%USERNAME%\AppData\Local\Google\Chrome" *.* /E 
 IF %ERRORLEVEL% GTR 7 (
 ECHO copy Chrome failed
 pause
-set "_err=_err + chrome"
-Call _FAIL1 !_err!
+Call :_LOG "failed to restore default folder" "F"
+
 )
-echo success on copy
-pause
-IF %_run% == 1 ( GOTO:_RESTORETABS )
+:: TODO prompt user for option to restore previous session is possible
+:: auto try to restore previous session. 
+CALL :_LOG "chrome sucessfully restored from backup" "P"
+CLS
+ECHO Attempting to restore previous Chrome session
+IF %_run% == 1 (
+	CALL :_RESTORSESSION
+	GOTO _EOF
+)
+
+
+
+
+:__FIRSTRUN
+ECHO in Firstrun 
+CALL v:\VDImproved\writeEvent.bat %0 "First backup created" "P"
+ECHO write to log firstrun
+PAUSE
+IF %_run% == 1 (
+	CALL ::_RESTORSESSION 
+	::fall thru
+)
 GOTO:_SETDEFAULT
 
 ::event logging
-:_FAIL1
-ECHO in FAIL1 && pause  
-CALL v:\VDImproved\writeEvent.bat "login chrome" "failed to restore default folder" "F"
-GOTO:_SETDEFAULT
-
-:__FIRSTRUN
-ECHO in Firstrun && pause  
-CALL v:\VDImproved\writeEvent.bat "login-chrome" "First backup created" "P"
-GOTO:_RESTORETABS
-
 :_LOG
-ECHO in LOG && pause
-CALL v:\VDImproved\writeEvent.bat "login-chrome" "chrome sucessfully restored" "P"
-GOTO:_SETDEFAULT
+ECHO in LOG 
+CALL v:\VDImproved\writeEvent.bat "Login-Chrome" %1 %2
+ECHO write to log event 0=%0d 1=%1 2=%2:
+PAUSE
+EXIT /B 0
 
 
-::restore chromes previous tabs if it wass running and sets it as default
-:_RESTORETABS
-ECHO in Restoretabs && pause
+::restore chromes previous session with tabs if it wass running and sets it as default
+:_RESTORSESSION
+ECHO in Restoretabs
+pause
 START "" "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" "--restore-last-session"
-::fall thru
+EXIT /B 0
+
+
 
 ::Sets chrome as default browser, launches browser
 :_SETDEFAULT
  ECHO in setdefault && pause
-START "" "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" "-silent -nosplash -setDefaultBrowser"
+START "" "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" "-silent -nosplash -setDefaultBrowser" "--restore-last-session"
 GOTO:_EOF
 
 

@@ -1,3 +1,5 @@
+::NOT NEEDED just call find_classque
+
 ::check if dir T
 ::	call find classque
 ::		save list of classques
@@ -15,7 +17,7 @@ CALL v:\VDImproved\install\find_classque.bat
 
 
 :_NOTFOUND
-CALL v:\VDImproved\writeEvent.bat "%0" "No clasque files found" "F"
-
+:: in calling script CALL v:\VDImproved\writeEvent.bat "%0" "No clasque files found" "F"
+EXIT /B 2
 :_EOF
 ENDLOCAL
