@@ -488,3 +488,815 @@ Wed 03/29-10:51		P		  		"Login-Chrome": "chrome sucessfully restored from backup
   
 END------------------------------------------------   
   
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Thu 03/30-11:14		P		  		"Login-Chrome": "chrome sucessfully restored from backup"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-10:57		P		  		"Login-Chrome": "chrome sucessfully restored from backup"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:10		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:10		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:11		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:25		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:25		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:25		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:25		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:25		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:25		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:25		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:25		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:25		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:25		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:25		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:25		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:25		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:25		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:25		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:25		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:25		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:25		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:25		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:25		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:25		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:25		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:25		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:25		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:25		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:25		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:25		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:25		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:25		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:25		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:25		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:26		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:35		  		F		"Create Profile": "mismatch  debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:37		  		F		"Create Profile": "mismatch  debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:37		  		F		"Create Profile": "mismatch  debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:37		  		F		"Create Profile": "mismatch  debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:39		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Fri 04/07-14:39		  		F		"Create Profile": "mismatch debug and 0"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Sun 04/09-11:27		P		  		"Login-Chrome": "chrome sucessfully restored from backup"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Mon 04/10- 9:30		P		  		"Login-Chrome": "chrome sucessfully restored from backup"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Wed 04/12-10:21		P		  		"Login-Chrome": "chrome sucessfully restored from backup"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Wed 04/12-12:19		  		F		"Create Profile:"V:\VDImproved\install\define_daytime_classque.bat"": "Profile data validated"
+  
+END------------------------------------------------   
+  

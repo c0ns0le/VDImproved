@@ -8,8 +8,7 @@ cd v:\classque
 
 
 ::the DIR command with flags will only print directories, no headers
-::for each line, each dir name is stored in a variable
-::variable names are dynamically created based on number of found dierctories
+::for each line, each dir name is used to dynamically create a classque login file and preference file
 for /F %%p in ('DIR /A:D /B /ON') do (
 ::	SET /a _count+=1
 	::DEBUG ECHO _count !_count! : percent p is %%p :

@@ -2,33 +2,35 @@ REM REM @ECHO OFF
 
 REM SETLOCAL ENABLEDELAYEDEXPANSION
 REM bash c:\Program Files\Git\git-bash.exe
-REM commands to automate commits to github
+:: commands to automate commits to github
 REM from v:\VDImproved 
-REM to add all new files to index -> "git add ." NOTE: the period must be included, it indicates all files 
+REM git add . => stages all new and modified files to index ->  NOTE: the period must be included, it indicates all files 
+
 BASICS 
 	(ALL Local, until a push)
 	Git has three main states that your files can reside in: committed, modified, and staged. 
-		Committed means that the data is safely stored in your local database. 
 		Modified/untracked means that you have changed the file or created a new one( new files are marked as untracked) but have not
 			committed it to your database yet. Use the git status command to view the status of a file. 
 		Staged means that you have marked a modified file in its current version to go into your next commit snapshot. 
 			After the commit all files are marked as unmodified until any changes are made
-	
+		Committed means that the data is safely stored in your local database. 
+		
 	The basic Git workflow goes something like this:
 		modify (or create new) files in your working tree.
-		stage the files, adding snapshots of them to your staging area.
+		stage the files, adding snapshots of them to your staging area. use the command "git add ."
+			or during a commit with the -a option
 		commit, which takes the files as they are in the staging area and stores that snapshot permanently to your Git directory.
 		
 	push <remote> <branch>	
 	
-COMMANDS
+::COMMANDS
 
 REM git add => a multi-use command used to stage new, modified or merge resolved files. 
 :: Any changes to a file made after the "add" command will NOT be included in a commit, unless git add is run again
 
-REM Commit => is creating new pointer to staged blob (index), with pointer to prev commit(s) and metadata
+REM Commit => is creating new pointer to stagged blob (index), with pointer to prev commit(s) and metadata
 
-REM git commit -a -m 'changes made' => to commit with modified and removed files, msg, etc
+REM git commit -a -m 'changes made' => commits with -a modified and removed files, -m a commit msg,.  
 
 REM git branch newname => to create new branch  
 :: Tracking occures when using checkout,  with -b if not exist -> new branch created
@@ -43,7 +45,7 @@ REM git PUll => is a fetch and merge when used on a tracking branch,which automa
 :: this is to pull down the changes located "upstream" and merge them with the local files. 
 
 
-REM git push <remote> <branch> => remote is default set to origin and branch default is set to master, althought often changed as needed
+REM git push <remote> <branch> => remote is default set to origin (upstream) and branch default is set to master, althought often changed as needed
 :: or to specify a branch to push to the remote using default names
 REM git push origin master:<specific branch name>
 

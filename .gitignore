@@ -1,5 +1,6 @@
-# These are user specific dirs and files
+# These are user specific dirs and files to exlude
 backup_restore/
 logs/
 login-CQ*.bat
 inTest/
+vc/automate.bat

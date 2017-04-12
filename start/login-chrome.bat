@@ -21,12 +21,12 @@ pause
 ::Checks for existing chrome dirs in appdata, creates if needed
 IF not exist "C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\" (
 mkdir "C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\"
-set _run=0
-ECHO 22 run is !_run! should 0
+set _chrome=0
+ECHO 22 chrome is !_chrome! should 0
 pause
 ) else (
-set _run=1
-ECHO 26 run is !_run! should be 1
+set _chrome=1
+ECHO 26 chrome is !_chrome! should be 1
 pause
 )
 
@@ -44,48 +44,49 @@ set _backup=3
 ECHO 41 backup is !_backup! should be 3
 pause
 )
-set /a "_check=_run+_backup"
+set /a "_check=_chrome+_backup"
 echo check is %_check%
 pause
 
 
-::  is running + backup, is running=1 if exist (else 0) AND backup=3 if exist (else 0)
-:: = 1+3 -> 4 (both exist)
-::      if 1 -> IsRunning (if T -> kill || else if F) -> HasBackup -> RestoreBackup -> RestoreSession->EOF
+::   chrome + backup, is chrome=1 if exist (else 0) AND backup=3 if exist (else 0)
+::		the running var is T is chrome has any current processes
+:: = 1+3 =  4 (both exist)
+::       -> 1 -> HasRun (if running T -> kill || else if F) -> HasBackup is 3-> FirstRun -> SetDefault ->EOF
+
+:: = 1+0 =  1 (chrome exists AND backup not exists)
+::       -> 1 -> HasRun (if running T -> kill || else if F) -> HasBackup is 0-> RestoreBackup -> RestoreSession->EOF
+
+:: = 0+3 =  3 (chrome not exist AND backup exist)
+::       -> RestoreBackup  -> RestoreSession->EOF
 ::    OR
-:: = 1+0 -> 1 (chrome exists AND backup not exists)
-::       -> -> IsRunning (if T -> kill || else if F) -> HasBackup -> FirstRun, SetDefault
-::    OR
-:: = 0+3 -> 3 (chrome not exist AND backup exist)
-::       -> Restore
-::    OR
-:: = 0+0 -> 0 (neither exist)
-::       -> setDEFAULT
+:: = 0+0 =  0 (neither exist)
+::       -> setDEFAULT -> EOF
 for %%I in (0 1 3 4) do if #%_check%==#%%I goto _%%ISTATE
 
 :_4STATE
-echo _4STATE, run is !_run! , backup is !_backup! , check is %_check%
+echo _4STATE, chrome is !_chrome! , backup is !_backup! , check is %_check%
 pause
-GOTO:_ISRUNNING
+GOTO:_HASRUN
 
 :_0STATE
-echo _0STATE, run is !_run! , backup is !_backup! , check is %_check%
+echo _0STATE, chrome is !_chrome! , backup is !_backup! , check is %_check%
 pause
 GOTO:_SETDEFAULT
 
 :_1STATE
-echo _1STATE, run is !_run! , backup is !_backup! , check is %_check%
+echo _1STATE, chrome is !_chrome! , backup is !_backup! , check is %_check%
 pause
-GOTO:_ISRUNNING
+GOTO:_HASRUN
 
 :_3STATE
-echo _3STATE, run is !_run! , backup is !_backup! , check is %_check%
+echo _3STATE, chrome is !_chrome! , backup is !_backup! , check is %_check%
 pause
 GOTO:_RESTOREBACKUP
 
 ::checks to see if chrome is runnning
-:_ISRUNNING
-ECHO in IsRunning && pause   
+:_HASRUN
+ECHO in HasRun && pause   
 set "_proc=tasklist.exe /FI "IMAGENAME eq chrom*" /NH "
 echo proc return is %_proc%
 pause
@@ -126,40 +127,38 @@ CALL v:\VDImproved\OnExit\backup.bat "C"
 GOTO:_FIRSTRUN
 )
 
-
+:: ROBOCOPY options --/NJH : No Job Header and /NJS : No Job Summary.
 :_RESTOREBACKUP
 ::copies from VDImproved backup location to chrome default location in APPDATA
 echo in restore
 pause
-ROBOCOPY "V:\VDImproved\backup_restore\chrome" "C:\Users\%USERNAME%\AppData\Local\Google\Chrome" *.* /E 
+ROBOCOPY "V:\VDImproved\backup_restore\chrome" "C:\Users\%USERNAME%\AppData\Local\Google\Chrome" *.* /E /NJH /NJS
 IF %ERRORLEVEL% GTR 7 (
 ECHO copy Chrome failed
 pause
 Call :_LOG "failed to restore default folder" "F"
-
+CALL :_RESTORSESSION
+GOTO _EOF
 )
 :: TODO prompt user for option to restore previous session is possible
 :: auto try to restore previous session. 
 CALL :_LOG "chrome sucessfully restored from backup" "P"
 CLS
 ECHO Attempting to restore previous Chrome session
-IF %_run% == 1 (
-	CALL :_RESTORSESSION
-	GOTO _EOF
-)
-
-
-
+CALL :_RESTORSESSION
+GOTO _EOF
 
 :__FIRSTRUN
 ECHO in Firstrun 
 CALL v:\VDImproved\writeEvent.bat %0 "First backup created" "P"
 ECHO write to log firstrun
 PAUSE
-IF %_run% == 1 (
-	CALL ::_RESTORSESSION 
+
+:: below conditional not req'd as this function only entered if chrome has never run and no backups exists
+::IF %_chrome% == 1 (
+::	CALL :_RESTORSESSION 
 	::fall thru
-)
+::)
 GOTO:_SETDEFAULT
 
 ::event logging
@@ -179,7 +178,7 @@ START "" "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" "--restor
 EXIT /B 0
 
 
-
+:: TODO just test if there is a default setting switch or file??? similar to existance of a firstrun file
 ::Sets chrome as default browser, launches browser
 :_SETDEFAULT
  ECHO in setdefault && pause
