@@ -25,7 +25,7 @@ BASICS
 	
 ::COMMANDS
 
-REM git add => a multi-use command used to stage new, modified or merge resolved files. 
+REM git add . => a multi-use command used to stage new, modified or merge resolved files. 
 :: Any changes to a file made after the "add" command will NOT be included in a commit, unless git add is run again
 
 REM Commit => is creating new pointer to stagged blob (index), with pointer to prev commit(s) and metadata

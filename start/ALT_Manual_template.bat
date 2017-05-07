@@ -40,48 +40,11 @@ CREATE SCHTASKS to run at class time
 			
 :_RUN
 ::SET _class=%~nx0
-ECHO Off
+ECHO ON
 
 SET _class=3773
 CALL :_CHECKPROFILE
 ::saves the current system time
-:: READS the %class%.txt except the first which is the class name
-:: The 2nd loop uses a CAll to compare: 
-::   -day of week (function CHECKDAY)
-::   -class start am or pm (function CHECKAMPM)
-::   -class start hour (function CHECKSTARTHOUR)
-::   -class start min (function CHECKSTARTMIN)
-::   -class end am or pm (function CHECKAMPM)
-::   -class end hour (function CHECKENDHOUR)
-::   -class end min (function CHECKENDMIN)
-FOR /F "SKIP=1 delims=;" %%G in (v:\VDImproved\profile\%_class%.txt) DO (
-
-FOR %%Y IN ( days endAP endHour endMin startAP startHour startMin seat) DO (
-	
-		IF %%Y==days SET _%%Y=%%G
-		IF %%Y==endAP SET _%%Y=%%G
-		IF %%Y==endHour SET _%%Y=%%G
-		IF %%Y==endMin SET _%%Y=%%G
-		IF %%Y==startAP SET _%%Y=%%G
-		IF %%Y==startHour SET _%%Y=%%G
-		IF %%Y==startMin SET _%%Y=%%G
-		IF %%Y==seat SET _%%Y=%%G
-ECHO  var is !_%%Y!
-PAUSE
-	)
-	
-)
-
-ECHO STOP HERE
-PAUSE
-
-
-
-
-	
-	
-		
-______DEL____________
 FOR /F "delims=" %%T IN ('TIME /T') DO SET _currTime=%%T	
 
 SET _currHr=%_currTime:~0,2%
@@ -102,63 +65,35 @@ PAUSE
 
 
 :: to determine if calssque should be run by setting lower and upper bounds 
-FOR /F "SKIP=1,delims=;" %%G in (v:\VDImproved\profile\%_class%.txt) DO (
-	
-	FOR %%Y IN (DAY STARTAMPM STARTHOUR STARTMIN ENDAMPM ENDTIME ENDMIN SEAT) DO (
-		CALL :_CHECK%%Y 
+SET _count=1
+FOR /F "SKIP=1 delims=;" %%G in (v:\VDImproved\profile\%_class%.txt) DO (
+::TODO MOVE INSIDE func SAVE
+	FOR %%Y IN (DAY STARTAMPM START ENDAMPM END SEAT) DO (
+		ECHO IN for g is %%G, y is %%Y
+		PAUSE
+		CALL :_SAVE "%%G" %%Y
 	)
+	SET /a _count=!_count!+1
 )
 
-:: Day of the week check. %%G var is the user defined var read from file
+:: Days of the week saved to _DAY. %%G var is the user defined var read from file
 :: the exit /B 0 returns to loop, current value is within user set range 
-:_CHECKDAY
-echo G is %%G
+:_SAVE
+ECHO ---%0, %1, %2 %_count% :
 PAUSE
-FOR %%D in (%%G) DO (
-	If %DATE:~0,3%==%%D 
-	EXIT /B 0
+FOR /L %%T IN (1, 6, 1) DO (
+	IF %_count% EQU %%T (
+		PAUSE
+		SET _%2=%1
+		ECHO days is !_%2!  :
+		EXIT /B 0
+		PAUSE
+		)
+		echo fin if
+		PAUSE
 )
-CALL :_EVENT "Mismatch day of week:%DATE:~0,3% req'd %%D" F
-GOTO:_EOF
-:: END AM PM check %%G var is the user defined var read from file
-:: the exit /B 0 returns to loop, current value is within user set range 
-:_CHECKSTARTAMPM
-IF %_genTime%==%%G EXIT /B 0
-CALL :_EVENT "Incorrect time of day:%_genTime% req'd %%G" F
-GOTO:_EOF
-
-
-:: Start hour check %%G var is the user defined var read from file
-:: if the hour is greater or equal continue
-:: the exit /B 0 returns to loop, current value is within user set range 
-:_CHECKSTARTHOUR
-IF %%G GEQ %_currHr% EXIT /B 0
-CALL :_EVENT ""Incorrect time of day:%_currHr% req'd %%G" F
-GOTO:_EOF
-
-:: Start minute check %%G var is the user defined var read from file
-:: if the min is greater or equal continue
-:: the exit /B 0 returns to loop, current value is within user set range 
-:_CHECKSTARTHOUR
-IF %%G GEQ %_currMin% EXIT /B 0
-CALL :_EVENT ""Incorrect time of day:%_currMin% req'd %%G" F
-START "Delayed Automatic ClassQue Execation"
-GOTO:_EOF
-
-
-:_TIME
-:: checks hour then minute
-
-
-
-pause
-IF %time:~0,2% GEQ 15 
-GOTO:_PASS else GOTO:_WRONGTIME
-
-
-:_PASS
-IF %time:~0,2% LEQ 17 GOTO:_Fin else GOTO:_WRONGTIME
-
+REM CALL :_EVENT "Mismatch day of week:%DATE:~0,3% req'd %%H" F
+REM GOTO:_EOF
 
 :_EVENT
 ECHO ---%0
@@ -195,51 +130,10 @@ ECHO DEBUG REMOVE SHOULD NEVER DISPLAY
 PAUSE
 
 
-::below will end classque processes, forcibly if process is running
-:_Fin  
-START "DIE " "v:\VDImproved\start\DieJavaDie.bat" && GOTO:_RUNQ
-
-
-:_RUNQ
+:_RUNCQ
 CMD java -jar classque-3843.jar && CALL v:\VDImproved\writeEvent.bat "3843" "Attendance recorded" "P"
 
 
 ::EOF
 :_EOF
 EXIT /B 0
-
-_____________________________	
- "%_days%" "%_endAP%" "%_endHour%:%_endMin%" "%_startAP%" "%_startHour%:%_startMin%" "%_seat%") DO (
-		ECHO in for's X=%%X, Y=%%Y, valid=!_valid!:
-		PAUSE
-		IF  "%%X"==%%Y (
-			SET _valid=T
-			ECHO valid=T
-			PAUSE
-			)
-		
-	)
-	IF !_valid!==F (
-		ECHO MISMATCH in valid=f
-		PAUSE
-		SET _Msg1="Create Profile"
-		SET _Msg2="Profile data mismatch: %%X"
-		SET _Msg3=F
-		CALL :_EVENTLOG
-		)
-)
-::END FILE READ and compare
-IF %_valid%==T (
-		ECHO File read valid=T
-		pause		
-		SET _Msg1="Create Profile:%0"
-		SET _Msg2="Profile data validated"
-		SET _Msg3=P
-		CALL :_EVENTLOG
-		ECHO finished validation&PAUSE
-		CALL :_RETURN "been saved" "P" 0
-		)
-		
-	
-)
-___________________________________________________________________

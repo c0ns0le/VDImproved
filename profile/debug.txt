@@ -1,7 +1,7 @@
 debug
-Mon,Tue,Wed,Thu,Fri
-am
-9:00
-am
-10:00
+Mon Tue Wed Thu Fri
+PM
+4:57
+PM
+03:57
 15

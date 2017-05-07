@@ -246,7 +246,7 @@ SET _endAP=%_endT:~4,1%m
 
 ECHO end hour:min = %_endHour%:%_endMin% %_endAP% start hour:min = %_startHour%:%_startMin% %_startAP%
 PAUSE
-:: fall thru 
+GOTO:_WRITE
 
 :: Creates a profile file to store classque settings
 ::TODO make the profile creation more robust by checking if exist and reading for existing info
@@ -263,9 +263,7 @@ IF EXIST "v:\VDImproved\profile\%_class%.txt" DEL "v:\VDImproved\profile\%_class
 >>"v:\VDImproved\profile\%_class%.txt" ECHO %_seat%
 CLS
 ECHO finished write&PAUSE
-
 GOTO:_CHECKWRITE
-:: fall thru 
 
 
 :: if all saved data matches user input data
@@ -318,7 +316,7 @@ PAUSE
 ECHO ---EVENT LOG
 ECHO     Msg1=%_Msg1%, Msg2=%_Msg2%, Msg3=%_Msg3% :
 PAUSE
-CALL v:\VDImproved\writeEvent.bat %_Msg1% %_Msg2% %_Msg3%
+
 EXIT /B 0
 
 ::Expects 3 parameters to indicate success or failure of script
@@ -342,16 +340,27 @@ set /P _debug="debug?"
 IF /I %_debug%==n EXIT /B 1
 SET _class=debug
 SET "_days=Mon,Tue,Wed,Thu,Fri"
-SET _startAP=am
-SET _startHour=9
-SET _startMin=00
-SET _endAP=am
-SET _endHour=10
-SET _endMin=00
+
+FOR /F "delims=" %%T IN ('TIME /T') DO SET _currTime=%%T	
+
+ECHO currTime = %_currTime%
+PAUSE
+SET _startHour=%_currTime:~0,2%
+SET _startMin=%_currTime:~3,2%
+SET _startAP=%_currTime:~6,2%
+IF %_startHour%==11 (
+	IF %_startAP%==AM SET _endAP=PM
+	IF %_startAP%==PM SET _endAP=AM
+	)
+SET _endAP=%_currTime:~6,2%
+IF %_startHour%==12 SET _endHour=01
+IF NOT %_startHour%==12 SET /A _endHour=%_currTime:~0,2%+1
+SET _endMin=%_currTime:~3,2%
 SET _seat=15
-ECHO SET debug vars
+ECHO SET debug vars as starthour=%_startHour%, startmin=%_startMin%, startap=%_startAP%, _endHour=%_endHour%, endmin=%_endMin%, endAP=%_endAP%, seat=%_seat%:
 PAUSE
 GOTO _WRITE
+
 
 :_EOF
 ENDLOCAL&EXIT /B 0

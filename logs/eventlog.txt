@@ -1300,3 +1300,45 @@ Wed 04/12-12:19		  		F		"Create Profile:"V:\VDImproved\install\define_daytime_cl
   
 END------------------------------------------------   
   
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Mon 04/17-10:49		P		  		"Login-Chrome": "chrome sucessfully restored from backup"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Sat 04/29-13:51		P		  		"Login-Chrome": "chrome sucessfully restored from backup"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Sat 04/29-15:58		  		F		"Create Profile:"V:\VDImproved\install\define_daytime_classque.bat"": "Profile data validated"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Sat 05/06-10:42		P		  		"Login-Chrome": "chrome sucessfully restored from backup"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Sat 05/06-18:52		P		  		"Login-Chrome": "chrome sucessfully restored from backup"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Sat 05/06-22:27		P		  		"Login-Chrome": "chrome sucessfully restored from backup"
+  
+END------------------------------------------------   
+  
