@@ -1342,3 +1342,164 @@ Sat 05/06-22:27		P		  		"Login-Chrome": "chrome sucessfully restored from backup
   
 END------------------------------------------------   
   
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Sun 05/07-10:45		P		  		"Login-Chrome": "chrome sucessfully restored from backup"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Sun 05/07-21:15		P		  		"Login-Chrome": "chrome sucessfully restored from backup"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Mon 05/08-13:56		P		  		"Login-Chrome": "chrome sucessfully restored from backup"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Mon 05/08-20:02		P		  		"Login-Chrome": "chrome sucessfully restored from backup"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Tue 05/09-13:11		P		  		"Login-Chrome": "chrome sucessfully restored from backup"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Tue 05/09-15:01		P		  		ALT_Manual_template: "Profile successfully read and saved"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Tue 05/09-15:12		P		  		ALT_Manual_template: "Profile successfully read and saved"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Tue 05/09-15:21		P		  		ALT_Manual_template: "Profile successfully read and saved"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Tue 05/09-15:26		P		  		ALT_Manual_template: "Profile successfully read and saved"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Tue 05/09-15:28		P		  		ALT_Manual_template: "Profile successfully read and saved"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Tue 05/09-15:31		P		  		ALT_Manual_template: "Profile successfully read and saved"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Tue 05/09-15:39		  		F		ALT_Manual_template: "value mismatch from read/stored value Tue: should be Mon"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Tue 05/09-15:47		P		  		ALT_Manual_template: "Profile successfully read and saved"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Tue 05/09-15:51		P		  		ALT_Manual_template: "Profile successfully read and saved"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Tue 05/09-15:54		P		  		ALT_Manual_template: "Profile successfully read and saved"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Tue 05/09-15:55		P		  		ALT_Manual_template: "Profile successfully read and saved"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Tue 05/09-15:58		P		  		ALT_Manual_template: "Profile successfully read and saved"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Tue 05/09-15:59		P		  		ALT_Manual_template: "Profile successfully read and saved"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Tue 05/09-16:04		P		  		ALT_Manual_template: "Profile successfully read and saved"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Tue 05/09-16:05		P		  		ALT_Manual_template: "Profile successfully read and saved"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Tue 05/09-16:09		P		  		ALT_Manual_template: "Profile successfully read and saved"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Tue 05/09-16:10		P		  		ALT_Manual_template: "Profile successfully read and saved"
+  
+END------------------------------------------------   
+  
+START----------------------------------------------------  
+  
+Day-Time		Success		Fail		File: MSG		 
+Tue 05/09-16:11		P		  		ALT_Manual_template: "Profile successfully read and saved"
+  
+END------------------------------------------------   
+  

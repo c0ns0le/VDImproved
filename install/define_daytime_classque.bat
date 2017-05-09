@@ -244,9 +244,22 @@ if %_endT:~0,1%==1 (
 SET _endMin=%_endT:~2,2%
 SET _endAP=%_endT:~4,1%m
 
+CALL :_24SHIFT
+
 ECHO end hour:min = %_endHour%:%_endMin% %_endAP% start hour:min = %_startHour%:%_startMin% %_startAP%
 PAUSE
 GOTO:_WRITE
+
+:: shifts from 12hour format to a 24 hour format
+:_24SHIFT
+IF /I %_startAP%==P (
+	SET _startHour=%_startHour%+12
+	)
+IF /I %_endAP%==P (
+	SET _endHour=%_endHour%+12
+	)
+EXIT /B 0
+
 
 :: Creates a profile file to store classque settings
 ::TODO make the profile creation more robust by checking if exist and reading for existing info

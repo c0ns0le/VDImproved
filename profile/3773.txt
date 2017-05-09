@@ -1,7 +1,7 @@
 3773
 Mon,Tue,Wed,Thu,Fri
 am
-9:00
-am
-10:00
+09:00
+pm
+23:30
 15
