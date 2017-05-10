@@ -1,0 +1,7 @@
+ECHO is off.
+Mon,Wed
+am
+0:00
+pm
+9:00
+34

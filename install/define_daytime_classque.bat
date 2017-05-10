@@ -259,15 +259,23 @@ IF /I %_endAP%==pm (
 )
 SET _endMin=%_endT:~2,2%
 
+<<<<<<< HEAD
 
 CALL :_24SHIFT
 
 REM ECHO end hour:min = %_endHour%:%_endMin% %_endAP% start hour:min = %_startHour%:%_startMin% %_startAP%
 REM PAUSE
+=======
+CALL :_24SHIFT
+
+ECHO end hour:min = %_endHour%:%_endMin% %_endAP% start hour:min = %_startHour%:%_startMin% %_startAP%
+PAUSE
+>>>>>>> d41dd28e5d2917db943570d0aefe1e6f5ec0b199
 GOTO:_WRITE
 
 :: shifts from 12hour format to a 24 hour format
 :_24SHIFT
+<<<<<<< HEAD
 IF /I %_startAP%==pm (
 	SET /A _startHour=%_startHour%+12
 	)
@@ -276,6 +284,14 @@ IF /I %_endAP%==pm (
 	)
 REM ECHO end hour:min = %_endHour%:%_endMin% %_endAP% start hour:min = %_startHour%:%_startMin% %_startAP%
 REM PAUSE
+=======
+IF /I %_startAP%==P (
+	SET _startHour=%_startHour%+12
+	)
+IF /I %_endAP%==P (
+	SET _endHour=%_endHour%+12
+	)
+>>>>>>> d41dd28e5d2917db943570d0aefe1e6f5ec0b199
 EXIT /B 0
 
 
