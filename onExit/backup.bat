@@ -21,21 +21,17 @@ IF _chrome == C ( GOTO:_CPCHROME )
 ECHO fell through check
 pause
 
+:: uses the command line regedit to export and save default or user defined prefs
+:_SYSTEM
+REG EXPORT HKEY_CURRENT_USER\Console "V:\VDImproved\backup_restore\Preferences\console.reg" /y
+
+::TODO add git automation
 :_GIT
 
 
 :_MS
-ECHO in MS
-pause
-IF not exist "C:\Users\%USERNAME%\AppData\Local\Microsoft\Office\15.0\" GOTO:_CPCHROME
-ROBOCOPY "C:\Users\%USERNAME%\AppData\Local\Microsoft\Office\15.0" "v:\VDImproved\backup_restore\Microsoft\Office\15.0" *.* /S
-::for error check on fail change to LEQ 7 else normal operation GTR 7
-IF %ERRORLEVEL% GTR 7 (
-ECHO copy MS failed
-pause
-set "_err=Microsoft"
-Call :_FAIL !_err!
-)
+REG EXPORT HKEY_CURRENT_USER\Software\Microsoft\Office\15.0 "V:\VDImproved\backup_restore\Preferences\office.reg" /y
+REG EXPORT HKEY_USERS\S-1-5-18\Software\Microsoft\VisualStudio "V:\VDImproved\backup_restore\Preferences\visualstudio.reg" /y
 ::else fallthru
 
 :_CPCHROME

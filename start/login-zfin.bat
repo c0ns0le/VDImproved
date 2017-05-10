@@ -4,13 +4,10 @@
 
 Setlocal EnableDelayedExpansion
 v:
-set _args="login-fin" "VDImproved finished" "P"
+SET _args="login-fin" "VDImproved finished" "P"
 
 echo %_args%
 
-CMD /C "v:\VDImproved\writeEvent.bat&pause""login-fin" "VDImproved finished" "P" 
+CMD /C v:\VDImproved\writeEvent.bat&pause "login-fin" "VDImproved finished" "P" 
 
-::%_args%
-
-
-:_EOF
+ENDLOCAL&EXIT /B 0

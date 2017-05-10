@@ -10,15 +10,15 @@
 
 :: 3rd Expansion of argument variables (%1, %2, etc.)
 :: 3rd Expansion of %var%, if var does not exists replace it with nothing
-SETLOCAL
+SETLOCAL ENABLEDELAYEDEXPANSION
 v:
 
 
 if not exist \VDImproved\logs\ then mkdir \VDImproved\logs\
 set _ctime=%DATE:~0,9%-%TIME:~0,5%
-ECHO  current script is %*
-echo %0 %1 %2 %3 %4 END VARS
-PAUSE
+REM ECHO  current script is %*
+REM echo %0 %1 %2 %3 %4 END VARS
+REM PAUSE
 ::below is for debugging uncomment to use
 ::echo  Para = %3
 if %3 == "P" GOTO:_PASS else GOTO:_FAIL  
@@ -53,5 +53,5 @@ echo.>> "v:\VDImproved\logs\eventlog.txt"
 GOTO:_EOF
 
 :_EOF 
-ENDLOCAL
+ENDLOCAL&EXIT /B 0
 :: EOF

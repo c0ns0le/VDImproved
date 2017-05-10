@@ -1,7 +1,7 @@
 @ECHO OFF
 :: starts Xming to be used with SSH. SSH must be configured for use with x11 tunneling
 :: adds success or failure to log file
-
+SETLOCAL ENABLE DELAYEDEXPANSION
 C:
 
 CLS
@@ -19,14 +19,14 @@ IF NOT DEFINED %confirm% (GOTO:CONFIRM)
 :: exits back to Install_VDImproved with errorlevel set to 0
 :: this will continute with the install process
 :_Y
-ECHO confirm is %confirm% 
-pause
+REM ECHO confirm is %confirm% 
+REM pause
 EXIT /B 0
 
 :: exits back to Install_VDImproved with errorlevel set to 1
 :_N
-ECHO confirm is %confirm% 
-pause
+REM ECHO confirm is %confirm% 
+REM pause
 EXIT /B 1
 
 cd \Program Files (x86)\Xming\
@@ -45,4 +45,3 @@ CALL v:\VDImproved\writeEvent.bat "login-Xming" "failed to start" "F"
 
 
 :_EOF
-::EOF

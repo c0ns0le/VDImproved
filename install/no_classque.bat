@@ -1,4 +1,4 @@
-@ECHO off
+@ECHO OFF
 SETLOCAL ENABLEDELAYEDEXPANSION
 
 ::opens cmd window asking user if they want to install without classque being installed
@@ -18,14 +18,12 @@ IF NOT DEFINED %confirm% (GOTO:CONFIRM)
 :: exits back to Install_VDImproved with errorlevel set to 0
 :: this will continute with the install process
 :_Y
-ECHO confirm is %confirm% 
-pause
-EXIT /B 0
+REM ECHO confirm is %confirm% 
+REM pause
+LOCAL&EXIT /B 0
 
 :: exits back to Install_VDImproved with errorlevel set to 1
 :_N
-ECHO confirm is %confirm% 
-pause
-EXIT /B 1
-
-ENDLOCAL
+REM ECHO confirm is %confirm% 
+REM pause
+ENDLOCAL&EXIT /B 1
